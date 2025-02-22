@@ -1,8 +1,8 @@
 .chatbox_parent {
-    display: grid;
     width: 100%;
     height: calc(100vh - 100px);
     overflow: hidden;
+    padding-left: 416px;
     .chat_box_header {
         width: 100%;
         background-color: #F0F2F5;
@@ -49,19 +49,22 @@
             }
         }
     }
-    .chat_box_middle {
-        background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
-        background-size: cover;
-        height: calc(100vh - 100px);
-        .chat_box {
-            .date_time {
-                span {
-                    background-color: #fffffff2;
-                    padding: 5px;
-                    border-radius: 5px;
-                    color: #54656F;
-                    font-size: 14px;
-                }
+    // .chat_box_middle {
+    //     background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+    //     background-size: cover;
+    //     height: calc(100vh - 100px);
+    // }
+    .chat_box {
+        .date_time {
+            width: 100%;
+            text-align: center;
+            margin: 15px 0px;
+            span {
+                background-color: #fffffff2;
+                padding: 5px;
+                border-radius: 5px;
+                color: #54656F;
+                font-size: 14px;
             }
         }
     }
