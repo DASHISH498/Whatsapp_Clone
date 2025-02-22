@@ -174,19 +174,72 @@
             }
         }
     }
-    .chat_box_header {
+    .chatbox_parent {
+        display: grid;
         width: 100%;
-        background-color: #F0F2F5;
-        height: 64px;
-        padding: 12px;
-        .profile-box {
-            height: 40px;
-            width: 40px;
-        }
-        img {
+        height: calc(100vh - 100px);
+        overflow: hidden;
+        .chat_box_header {
             width: 100%;
-            object-fit: cover;
-            border-radius: 50px;
+            background-color: #F0F2F5;
+            height: 64px;
+            padding: 12px;
+            .chatbox_header_inner {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .left-header {
+                    display: flex;
+                    align-items: center;
+                }
+                .right-header {
+                    text-align: right;
+                    .serach-icon {
+                        position: relative;
+                        svg {
+                            &::before {
+                                position: absolute;
+                                top: 0;
+                                content: '';
+                                height: 40px;
+                                width: 40px;
+                                background-color: red;
+                            }
+                        }
+                    }
+                }
+            }
+            .profile-box {
+                height: 40px;
+                width: 40px;
+                margin-right: 15px;
+            }
+            img {
+                width: 100%;
+                object-fit: cover;
+                border-radius: 50px;
+            }
+            .profile_user_name {
+                h6 {
+                    margin: 0;
+                }
+            }
+        }
+        .chat_box_middle {
+            background-image: url('https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png');
+            background-size: cover;
+            height: calc(100vh - 100px);
+            .chat_box {
+                .date_time {
+                    span {
+                        background-color: #fffffff2;
+                        padding: 5px;
+                        border-radius: 5px;
+                        color: #54656F;
+                        font-size: 14px;
+                    }
+                }
+            }
         }
     }
 }
