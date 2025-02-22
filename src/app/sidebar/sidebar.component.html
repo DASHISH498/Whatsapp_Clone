@@ -37,7 +37,7 @@
                         <div class="left-detail">
                             <div class="profile"></div>
                         </div>
-                        <div class="sender_dateTime">
+                        <div class="sender_dateTime" (click)="openChat(chatList.id)">
                             <div class="sender_detail">
                                 <h6 class="m-0">{{chatList.name}}</h6>
                                 <span>Rajesh : Hello there i am using whatsapp.</span>
@@ -74,7 +74,7 @@
             </div>
         </div>
     </div> -->
-    <div class="chat_box_header">
+    <!-- <div class="chat_box_header">
         <div class="profile-box">
             <div class="chat_box_header_profile">
                 <img src="https://media-del2-1.cdn.whatsapp.net/v/t61.24694-24/473406303_2352759165099127_52585189839572823_n.jpg?stp=dst-jpg_s96x96_tt6&ccb=11-4&oh=01_Q5AaIMTSuhd3oy8aK6wSXdSpukLl0lv_TrTkTj7ysbzFE-xZ&oe=67C6C428&_nc_sid=5e03e0&_nc_cat=110" alt="">
@@ -83,5 +83,6 @@
         <div class="profile_user_name">
             <h6>Hemlata Verma</h6>
         </div>
-    </div>
+    </div> -->
+<router-outlet></router-outlet>
 </div>
