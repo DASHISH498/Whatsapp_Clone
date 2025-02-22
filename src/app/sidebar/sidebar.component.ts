@@ -10,6 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './sidebar.component.scss'
 })
 export class SidebarComponent {
+
   listBOx = [
     {
       linkName: 'Archive chat'
@@ -40,63 +41,47 @@ export class SidebarComponent {
   chatListt = [
     {
       name: 'Rajesh',
-      senderTime : '7:27'
+      senderTime : '7:27pm'
     },
     {
       name: 'Ankur',
-      senderTime : '7:26'
+      senderTime : '8/7/2023'
     },
     {
       name: 'Rajpal',
-      senderTime : '6:18'
+      senderTime : '6:18pm'
     },
     {
       name: 'Simmy',
-      senderTime : '7:27'
+      senderTime : 'Friday'
     },
     {
       name: 'Ranjana',
-      senderTime : '8:15'
+      senderTime : '8/12/2023'
     },
     {
       name: 'Amisha',
-      senderTime : '9:41'
+      senderTime : '9:41pm'
     },
     {
       name: 'Pummy',
-      senderTime : '1:52'
+      senderTime : '1:52pm'
     },
     {
       name: 'Tina',
-      senderTime : '7:26'
+      senderTime : '12/10/2024'
     },
     {
       name: 'Dipender',
-      senderTime : '5:27'
+      senderTime : '5:27pm'
     },
     {
       name: 'Rameshwar',
-      senderTime : '8:47'
+      senderTime : '4/5/2024'
     },
     {
       name: 'Ashish',
-      senderTime : '7:29'
-    },
-    {
-      name: 'Ashish',
-      senderTime : '7:29'
-    },
-    {
-      name: 'Ashish',
-      senderTime : '7:29'
-    },
-    {
-      name: 'Ashish',
-      senderTime : '7:29'
-    },
-    {
-      name: 'Ashish',
-      senderTime : '7:29'
+      senderTime : '7:29pm'
     },
   ]
 }
